@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="spaceX.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/06b626c0ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="/image/f.jpg">
+    <title>SpaceX</title>
+  </head>
+  <body>
+    <div class="big-box">
+      <div class="big-box-top">
+        <div class="big-box-logo">
+          <img src="/image/spacex.png" alt="SpaceX" />
+        </div>
+        <div class="big-box-top-bar">
+          <a href="#" class="">FALCON 9</a>
+          <a href="#" class="">FALCON HEAVY</a>
+          <a href="#" class="">DRAGON</a>
+          <a href="#" class="">STARSHIP</a>
+          <a href="#" class="">HUMAN SPACEFLIGHT</a>
+          <a href="#" class="">RIDESHARE</a>
+          <a href="#" class="">STARLINK</a>
+        </div>
+        <div class="big-box-top-right">
+          <a href="#" class="">SHOP</a>
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="big-box-first">
+        <div class="big-box-section-first">
+          <img class="big-box-background-1" src="/image/base1.jpg" />
+          <div class="big-box-background-front-1">
+            <p>RECENT MISSION</p>
+            <h1 class = head>CREW-5 MISSION</h1>
+            <a class = butt href="#">REWATCH</a>
+          </div>
+        </div>
+
+        <div class="big-box-section-second">
+          <img class="big-box-background-2" src="/image/base6.jpg" />
+          <div class="big-box-background-front-2">
+            <p>UPCOMING LAUNCH</p>
+            <h1 class = head>INTELSAT G-33/G-34 MISSION</h1>
+            <a class = butt href="#">WATCH</a>
+          </div>
+        </div>
+
+        <div class="big-box-section-third">
+          <img class="big-box-background-3" src="/image/base2.jpg" />
+          <div class="big-box-background-front-3">
+            <p>RECENT LAUNCH</p>
+            <h1 class = head>STARLINK MISSION</h1>
+            <a class = butt href="#">REWATCH</a>
+          </div>
+        </div>
+
+        <div class="big-box-section-fourth">
+          <img class="big-box-background-4" src="/image/base9.jpg" />
+          <div class="big-box-background-front-4">
+            <h1 class = head>STARSHIP UPDATE</h1>
+            <a class = butt href="#">LEARN MORE</a>
+          </div>
+        </div>
+
+        <div class="big-box-section-fifth">
+          <img class="big-box-background-5" src="/image/base3.jpg" />
+          <div class="big-box-background-front-5">
+            <h1 class = head>STARSHIP TO LAND NASA ASTRONAUTS ON THE MOON</h1>
+            <a class = butt href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="footnote">
+        <p>SPACEX © 2022</p>
+        <a href="#">TWITTER</a>
+        <a href="#">YOUTUBE</a>
+        <a href="#">INSTAGRAM</a>
+        <a href="#">FLICKR</a>
+        <a href="#">LINKEDIN</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">SUPPLIERS</a>
+      </div>
+    </div>
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (currentScrollPos < 10) {
+          document.querySelector(".big-box-top").style.backgroundColor =
+            "transparent";
+        } else if (prevScrollpos > currentScrollPos) {
+          document.querySelector(".big-box-top").style.visibility = "visible";
+          document.querySelector(".big-box-top").style.backgroundColor =
+            "black";
+        } else if (currentScrollPos > 50) {
+          document.querySelector(".big-box-top").style.backgroundColor =
+            "transparent";
+          document.querySelector(".big-box-top").style.visibility = "hidden";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+  </body>
+</html>

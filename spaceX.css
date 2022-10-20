@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.big-box {
+  position: relative;
+}
+
+.big-box-top {
+  width: 1351px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.4fr;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px 38px 50px;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  transition-timing-function: ease-in-out;
+  transition-duration: 250ms;
+  z-index: 1;
+}
+
+.big-box-logo img {
+  max-width: 210px;
+}
+
+.big-box-top-bar {
+  display: flex;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-between;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+.big-box-top-bar a {
+  color: #fff;
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.big-box-top-bar a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.big-box-top-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.big-box-top-right a {
+  color: #fff;
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.fa-sharp {
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.fa-sharp:active {
+  <i class="fa-solid fa-xmark"></i>
+}
+
+[class^="big-box-background"] {
+  width: 100%;
+  height: 100vh;
+  object-fit: none;
+}
+
+.big-box-section-first {
+  height: 100vh;
+  position: relative;
+}
+
+[class^=big-box-background-front] {
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  width: 450px;
+  height: 200px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.head {
+  margin-top: 0px;
+}
+
+.butt {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 25px auto 20px 0px;  
+  padding: 15px 50px;
+  font-size: smaller;
+}
+
+.butt:hover {
+  text-decoration: none;
+  background: white;
+ 
+  color: black;
+
+}
+
+.big-box-section-second {
+  position: relative;
+}
+
+.big-box-section-third {
+  position: relative;
+}
+
+.big-box-section-fourth {
+  position: relative;
+}
+
+.big-box-section-fifth {
+  position: relative;
+}
+
+.big-box-background-1 {
+  object-position: 60% 30%;
+}
+
+.big-box-background-2 {
+  object-position: 60% 40%;
+}
+
+.big-box-background-3 {
+  object-position: 50% 60%;
+}
+
+.big-box-background-4 {
+  object-position: 60% 40%;
+}
+
+.big-box-background-5 {
+  object-position: 30% 10%;
+}
+
+.footnote {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 40px 250px 30px 300px;
+  font-size: x-small;
+  background-color: black;
+  color: gray;
+}
+
+.footnote a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.footnote a:hover {order: 1px solid maroon;
+  color: gray;
+  text-decoration: none;
+  transition-delay: 250ms;
+}
+
+@media screen and (max-width: 960px){
+  .big-box-top-right {
+    position: absolute;
+    
+    right: 500px
+  }
+}
